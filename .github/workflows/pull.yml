@@ -1,7 +1,6 @@
 name: Create Pull Request on Commit
 
 on:
-  push:
   workflow_dispatch:
     inputs:
       source:
