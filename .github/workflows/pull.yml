@@ -1,16 +1,17 @@
 name: Create Pull Request on Commit
 
 on:
+  push:
   workflow_dispatch:
-#     inputs:
-#       source:
-#         description: 'Enter the source branch for the pull request'
-#         required: true
-#         default: 'develop'
-#       destination:
-#         description: 'Enter the destination branch for the pull request'
-#         required: true
-#         default: 'test'
+    inputs:
+      source:
+        description: 'Enter the source branch for the pull request'
+        required: true
+        default: 'develop'
+      destination:
+        description: 'Enter the destination branch for the pull request'
+        required: true
+        default: 'test'
 
 jobs:
   create_pull_request:
