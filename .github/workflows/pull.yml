@@ -1,6 +1,8 @@
 name: Create Pull Request on Commit
 
 on:
+  repository_dispatch:
+    types: trigger-my-child-workflow
   workflow_dispatch:
     inputs:
       source:
